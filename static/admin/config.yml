@@ -681,6 +681,7 @@ collections:
             default: home
   - name: blog
     label: Blog
+    preview_path: blog/{{slug}}
     files:
       - name: blog
         label: Blog
