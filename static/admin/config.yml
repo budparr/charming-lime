@@ -1203,6 +1203,8 @@ collections:
     extension: md
     slug: '{{slug}}'
     preview_path: posts/{{slug}}
+    editor:
+      preview: true
     fields:
       - widget: string
         name: title
