@@ -1,5 +1,6 @@
 ---
 title: Yet another test post
+subtitle: subutte
 date: 2020-01-24T01:53:03.087Z
 layout: post
 ---
