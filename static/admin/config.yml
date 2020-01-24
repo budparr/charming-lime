@@ -4,7 +4,7 @@ backend:
 media_folder: static/images
 public_folder: /images
 publish_mode: editorial_workflow
-site_url: https://charming-lime-9a89e.netlify.com/
+site_url: https://charming-lime2.netlify.com/
 collections:
   - name: config
     label: Global Site Config
