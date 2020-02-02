@@ -776,13 +776,13 @@ collections:
             label: Layout
             required: true
             default: blog
-  - name: articles
-    label: Articles
-    preview_path: articles/{{slug}}
+  - name: articles-art
+    label: Articles Art
+    preview_path: articles/art/{{slug}}
     files:
-      - name: blog
-        label: Blog
-        file: content/articles/_index.md
+      - name: articles
+        label: Articles
+        file: content/articles/art/_index.md
         fields:
           - widget: string
             name: title
@@ -799,79 +799,29 @@ collections:
             label: Image
             required: false
             hint: The image shown in the background of the page header.
-          - widget: object
-            name: menu
-            label: Blog Menus
-            required: false
-            hint: Which menus should this page show up in
-            fields:
-              - widget: object
-                name: main
-                label: Main menu item
-                required: false
-                hint: Main menu item for this page
-                fields:
-                  - widget: string
-                    name: name
-                    label: Title
-                    required: false
-                    hint: The title of the menu item
-                  - widget: number
-                    name: weight
-                    label: Weight
-                    required: false
-                    hint: Position for sorting
-                    valueType: int
-                  - widget: string
-                    name: identifier
-                    label: Identifier
-                    required: false
-                    hint: >-
-                      The identifier of a menu item could be used as a parent
-                      menu of another menu item
-                  - widget: string
-                    name: parent
-                    label: Parent Menu Identifier
-                    required: false
-                    hint: >-
-                      The parent of an entry should be the identifier of another
-                      entry.
-              - widget: object
-                name: layouts
-                label: Layouts menu item
-                required: false
-                hint: Layouts menu item for this page
-                fields:
-                  - widget: string
-                    name: name
-                    label: Title
-                    required: false
-                    hint: The title of the menu item
-                  - widget: number
-                    name: weight
-                    label: Weight
-                    required: false
-                    hint: Position for sorting
-                    valueType: int
-                  - widget: string
-                    name: identifier
-                    label: Identifier
-                    required: false
-                    hint: >-
-                      The identifier of a menu item could be used as a parent
-                      menu of another menu item
-                  - widget: string
-                    name: parent
-                    label: Parent Menu Identifier
-                    required: false
-                    hint: >-
-                      The parent of an entry should be the identifier of another
-                      entry.
-          - widget: hidden
-            name: layout
-            label: Layout
+  - name: articles-books
+    label: Articles Art
+    preview_path: articles/books/{{slug}}
+    files:
+      - name: articles
+        label: Articles
+        file: content/articles/books/_index.md
+        fields:
+          - widget: string
+            name: title
+            label: Title
             required: true
-            default: blog
+            hint: The title of the page.
+          - widget: string
+            name: subtitle
+            label: Subtitle
+            required: false
+            hint: The text shown just below the page title.
+          - widget: image
+            name: img_path
+            label: Image
+            required: false
+            hint: The image shown in the background of the page header.      
   - name: overview
     label: Overview
     files:
