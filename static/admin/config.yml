@@ -778,11 +778,11 @@ collections:
             default: blog
   - name: articles-art
     label: Articles Art
+    folder: content/articles/art
     preview_path: articles/art/{{slug}}
     files:
       - name: articles
-        label: Articles
-        file: content/articles/art/_index.md
+        label: Articles        
         fields:
           - widget: string
             name: title
@@ -800,12 +800,12 @@ collections:
             required: false
             hint: The image shown in the background of the page header.
   - name: articles-books
-    label: Articles Art
+    label: Articles books
+    folder: content/articles/books
     preview_path: articles/books/{{slug}}
     files:
       - name: articles
-        label: Articles
-        file: content/articles/books/_index.md
+        label: Articles        
         fields:
           - widget: string
             name: title
