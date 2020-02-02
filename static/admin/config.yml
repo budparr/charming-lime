@@ -782,7 +782,7 @@ collections:
     files:
       - name: blog
         label: Blog
-        file: content/blog/_index.md
+        file: content/articles/_index.md
         fields:
           - widget: string
             name: title
