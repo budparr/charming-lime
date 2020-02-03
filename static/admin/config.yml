@@ -1322,7 +1322,7 @@ collections:
     create: true
     extension: md
     slug: "{{slug}}"
-    preview_path: articles/{{slug}}
+    preview_path: articles/art/{{slug}}
     editor:
       preview: true
     fields:
@@ -1442,7 +1442,7 @@ collections:
     create: true
     extension: md
     slug: "{{slug}}"
-    preview_path: articles/{{slug}}
+    preview_path: articles/books{{slug}}
     editor:
       preview: true
     fields:
