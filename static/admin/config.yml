@@ -1444,7 +1444,7 @@ collections:
     slug: "{{slug}}"
     preview_path: articles/books{{slug}}
     editor:
-      preview: true
+      preview: false
     fields:
       - widget: string
         name: title
